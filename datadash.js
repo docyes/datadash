@@ -3,9 +3,9 @@ function datadash(el, options){
         attribute, 
         kv = {},
         options = options || {},
-        options.attribute = options.attribute || 'data-',
         attributes = el.attributes, 
         l = attributes.length;
+    options.attribute = options.attribute || 'data-';
     for (var i = 0; i < l; i++) {
         attribute = attributes[i];
         nodeName = attribute.nodeName;
