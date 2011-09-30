@@ -1,0 +1,9 @@
+Retrieve HTML5 custom data-* attributes (or any others) key/value pairs sans-camel-case.
+
+data-* usage:
+<a href="http://trailerparks.com" data-trailer="airstream" data-park="double dutch RV park">Live the dream!</a>
+<script>
+	var data = datadash(document.getElementsByTagName()[0]);
+	assertEquals(data['data-trailer'], 'airstream');
+	assertEquals(data['data-park'], 'double dutch RV park');
+</script>
